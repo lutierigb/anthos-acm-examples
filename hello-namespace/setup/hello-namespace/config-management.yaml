@@ -4,9 +4,9 @@ metadata:
   name: config-management
   namespace: config-management-system
 spec:
-  clusterName: my-cluster
+  clusterName:  anthosstuff
   git:
-    syncRepo: git@github.com:<GITHUB-USERNAME>/csp-config-management.git
+    syncRepo: git@github.com:lutierigb/anthos-acm-examples.git
     syncBranch: 1.0.0
-    secretType: ssh
+    secretType: none
     policyDir: "hello-namespace/config-root"
