@@ -1,4 +1,3 @@
----
 # Source: acm-charts/templates/namespaces/tqa/pu10/repository-secrets.yaml
 apiVersion: v1
 kind: ServiceAccount
