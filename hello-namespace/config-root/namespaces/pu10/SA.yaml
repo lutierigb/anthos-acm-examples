@@ -42,7 +42,7 @@ imagePullSecrets:
 # ----
  apiVersion: v1
  data:
-   .dockerconfigjson: eyJhd
+   .dockerconfigjson: YXNkZgo=
  kind: Secret
  metadata:
    name: gcr-json-key-us
