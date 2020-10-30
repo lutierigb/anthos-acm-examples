@@ -4,9 +4,9 @@ kind: ServiceAccount
 metadata:
   name: default
   namespace: pu10
-secrets:
-imagePullSecrets:
-- name: gcr-json-key
+#secrets:
+#imagePullSecrets:
+#- name: gcr-json-key
 #- name: gcr-json-key-us
 ---
 # Source: acm-charts/templates/namespaces/tqa/pu10/repository-secrets.yaml
@@ -40,11 +40,11 @@ imagePullSecrets:
 # type: kubernetes.io/dockerconfigjson
 
 # ----
- apiVersion: v1
- data:
-   .dockerconfigjson: eyJhdXRocyI6eyJnY3IuaW8iOnsidXNlcm5hbWUiOiJqb2huIiwicGFzc3dvcmQiOiJzdWNraXQiLCJlbWFpbCI6ImpvaG5AYWRzZi5jb20iLCJhdXRoIjoiYW05b2JqcHpkV05yYVhRPSJ9fX0=
- kind: Secret
- metadata:
-   name: gcr-json-key-us
-   namespace: pu10
- type: kubernetes.io/dockerconfigjson
+# apiVersion: v1
+# data:
+#   .dockerconfigjson: eyJhdXRocyI6eyJnY3IuaW8iOnsidXNlcm5hbWUiOiJqb2huIiwicGFzc3dvcmQiOiJzdWNraXQiLCJlbWFpbCI6ImpvaG5AYWRzZi5jb20iLCJhdXRoIjoiYW05b2JqcHpkV05yYVhRPSJ9fX0=
+# kind: Secret
+# metadata:
+#   name: gcr-json-key-us
+#   namespace: pu10
+# type: kubernetes.io/dockerconfigjson
