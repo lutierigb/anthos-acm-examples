@@ -6,7 +6,7 @@ metadata:
 spec:
   clusterName:  anthosstuff
   git:
-    syncRepo: git@github.com:lutierigb/anthos-acm-examples.git
+    syncRepo: https://github.com/lutierigb/anthos-acm-examples/
     syncBranch: 1.0.0
     secretType: none
     policyDir: "hello-namespace/config-root"
