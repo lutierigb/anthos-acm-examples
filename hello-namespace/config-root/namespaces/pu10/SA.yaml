@@ -8,23 +8,23 @@ secrets:
 imagePullSecrets:
 - name: gcr-json-key
 - name: gcr-json-key-us
----
+#---
 # Source: acm-charts/templates/namespaces/tqa/pu10/repository-secrets.yaml
-apiVersion: v1
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2djci
-kind: Secret
-metadata:
-  name: gcr-json-key
-  namespace: pu10
-type: kubernetes.io/dockerconfigjson
+##apiVersion: v1
+# data:
+#   .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2djci
+# kind: Secret
+# metadata:
+#   name: gcr-json-key
+#   namespace: pu10
+# type: kubernetes.io/dockerconfigjson
 
-----
-apiVersion: v1
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL3VzLmdjci5pbyI6eyJ1c2VybmFtZSI6Il9qc29uX2tleSIsInBhc3N3b3JkIjoie1xuICBcInR5cGVcIjogXCJzZXJ2aWNlX2FjY291bnRcIixcbiAgXCJwcm9qZWN0X2lkXCI6IFwidG5nLWFudGhv
-kind: Secret
-metadata:
-  name: gcr-json-key-us
-  namespace: pu10
-type: kubernetes.io/dockerconfigjson
+# ----
+# apiVersion: v1
+# data:
+#   .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL3VzLmdjci5pbyI6eyJ1c2VybmFtZSI6Il9qc29uX2tleSIsInBhc3N3b3JkIjoie1xuICBcInR5cGVcIjogXCJzZXJ2aWNlX2FjY291bnRcIixcbiAgXCJwcm9qZWN0X2lkXCI6IFwidG5nLWFudGhv
+# kind: Secret
+# metadata:
+#   name: gcr-json-key-us
+#   namespace: pu10
+# type: kubernetes.io/dockerconfigjson
