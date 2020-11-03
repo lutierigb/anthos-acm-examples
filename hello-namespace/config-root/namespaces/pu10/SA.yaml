@@ -6,8 +6,7 @@ metadata:
      new: tag
   name: default
   namespace: pu10
-#secrets:
-#imagePullSecrets:
-#- name: gcr-json-key
+imagePullSecrets:
+- name: secret1
 #- name: gcr-json-key-us
 
