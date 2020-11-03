@@ -12,14 +12,14 @@ metadata:
 #- name: gcr-json-key-us
 ---
 # Source: acm-charts/templates/namespaces/tqa/pu10/repository-secrets.yaml
-#apiVersion: v1
-#data:
-#  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2djci
-#kind: Secret
-#metadata:
-#  name: gcr-json-key
-#  namespace: pu10
-#type: kubernetes.io/dockerconfigjson
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2djci
+kind: Secret
+metadata:
+  name: gcr-json-key
+  namespace: pu10
+type: kubernetes.io/dockerconfigjson
 
 #----
 #apiVersion: v1
