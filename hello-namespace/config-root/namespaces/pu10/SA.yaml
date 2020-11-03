@@ -1,0 +1,13 @@
+# Source: acm-charts/templates/namespaces/tqa/pu10/repository-secrets.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations: 
+     new: tag
+  name: default
+  namespace: pu10
+#secrets:
+#imagePullSecrets:
+#- name: gcr-json-key
+#- name: gcr-json-key-us
+
